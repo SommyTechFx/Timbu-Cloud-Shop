@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  --text: #130b1d;
+  --background: rgba(255, 255, 255, 1);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem 2rem;
+  background-color: var(--background);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo h1 {
+  margin: 0;
+  font-family: "Rubik Glitch";
+  color: rgba(244, 140, 6, 1);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 4.7rem;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+li {
+  margin: 0 1rem;
+  font-family: "PT Serif";
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 37.1px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+  padding: 1rem;
+}
+li:hover {
+  color: rgba(209, 154, 100, 1);
+  cursor: pointer;
+}
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+.navbar-search {
+  display: flex;
+}
+.icon {
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0.3rem;
+}
+.menu-icon {
+  display: none;
+}
+.contact-button {
+  font-family: "PT Serif";
+  width: 12.3rem;
+  height: 5.1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  border: 1px solid rgba(209, 154, 100, 1);
+  border-radius: 0.8rem;
+  background-color: var(--background);
+}
+@media screen and (max-width: 925px) {
+  ul {
+    /* display: none; */
+    flex-direction: column;
+  }
+  .contact-button {
+    display: none;
+  }
+  .menu-icon {
+    display: flex;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  .navbar-search {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 9%;
+    left: 0;
+    width: 100%;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    transition: all 0.3s ease;
+  }
+  .navbar-search.open {
+    display: flex;
+  }
+
+  li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 3rem;
+  }
+}
