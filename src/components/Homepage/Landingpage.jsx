@@ -1,5 +1,5 @@
 import Hero from "../products/Hero";
-import Category from "../products/Category";
+import Category from "./../products/Category.jsx";
 
 function Landingpage() {
   return (

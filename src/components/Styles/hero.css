@@ -6,7 +6,7 @@ body {
 }
 .background-picture {
   height: 100vh;
-  background-image: url("/src/images/Frame\ 45.png"); /* Adjust the path as needed */
+  background-image: url("/src/images/Frame.png"); /* Adjust the path as needed */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
