@@ -1,0 +1,34 @@
+.trending-section {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* width: 100%; */
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.trending-section span {
+  font-family: " PT Serif";
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.6rem;
+  letter-spacing: 0.02em;
+  color: rgba(209, 154, 100, 1);
+}
+.trending-section::before,
+.trending-section::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid rgba(209, 154, 100, 0.65);
+  margin: 0 10px;
+}
+
+.trending-item {
+  width: 264px;
+  height: 281px;
+  top: 1705px;
+  left: 30px;
+  gap: 0px;
+  border-radius: 10px 0px 0px 0px;
+}
