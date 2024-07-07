@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.total-footer {
+  background-color: rgba(209, 154, 100, 1);
+  margin-top: 5rem;
+  padding: 5rem;
+}
+.total-footer {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 4fr);
+  box-shadow: 0 2px 5px rgba(209, 154, 100, 0.65);
+}
+
+ul {
+  display: inline-block;
+}
+.App-description h3 {
+  font-family: "Rubik Glitch";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 47.4px;
+  text-align: left;
+  color: rgba(244, 140, 6, 1);
+}
+.App-description p {
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.App-company,
+.Help-center,
+.contact-info {
+  margin-top: 3rem;
+}
+.App-company h3,
+.Help-center h3,
+.contact-info h3 {
+  font-family: "PT Serif";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.App-company li,
+.Help-center li,
+.contact-info li {
+  color: rgba(255, 255, 255, 1);
+}
+hr {
+  border-bottom: 1px solid white;
+  width: 100%;
+  flex: 1;
+}
+@media screen and (max-width: 900px) {
+  .total-footer {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .total-footer {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

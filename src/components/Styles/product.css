@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-.trending-section {
+.product-section {
   font-size: 2rem;
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-.trending-section span {
+.product-section span {
   font-family: " PT Serif";
   font-size: 4rem;
   font-weight: 700;
@@ -17,15 +17,15 @@
   letter-spacing: 0.02em;
   color: rgba(209, 154, 100, 1);
 }
-.trending-section::before,
-.trending-section::after {
+.product-section::before,
+.product-section::after {
   content: "";
   flex: 1;
   border-bottom: 1px solid rgba(209, 154, 100, 0.65);
   margin: 0 10px;
 }
 
-.trending-item {
+.product-item {
   width: 264px;
   height: 281px;
   top: 1705px;
@@ -33,37 +33,36 @@
   gap: 0px;
   border-radius: 10px 0px 0px 0px;
 }
-.Total-div-container {
+.Total-divs-container {
   display: grid;
   place-items: center;
   grid-template-columns: repeat(4, 4fr);
-  margin: 1rem;
 }
-.trending-container {
+.product-container {
   position: relative;
-  margin: 1rem;
+  margin-bottom: 15rem;
 }
-.trending-container img {
+.product-container img {
   border-radius: 1rem;
   box-shadow: 0 2px 5px rgba(209, 154, 100, 0.65);
 }
-.trending-div-details {
+.product-div-details {
   position: absolute;
   background-color: rgba(255, 255, 255, 1);
   width: 248px;
   height: 94px;
-  top: 17.7rem;
+  top: 26.7rem;
   left: 0.8rem;
   padding: 10px 10px 11px 10px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(209, 154, 100, 0.65);
 }
 
-.trending-text1 {
+.product-text1 {
   display: flex;
   justify-content: space-between;
 }
-.trending-text1 p {
+.product-text1 p {
   font-family: " PT Serif";
   font-size: 2rem;
   font-weight: 700;
@@ -72,7 +71,7 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
-.trending-text1 span {
+.product-text1 span {
   display: flex;
   border: 1px solid rgba(209, 154, 100, 1);
   align-items: center;
@@ -83,12 +82,12 @@
   border-radius: 30px;
 }
 
-.trending-text2 {
+.product-text2 {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
 }
-.trending-text2 p {
+.product-text2 p {
   font-family: "PT Serif";
   font-size: 20px;
   font-weight: 700;
@@ -96,7 +95,7 @@
   letter-spacing: 0.02em;
   color: rgba(0, 0, 0, 0.8);
 }
-.trending-text2 button {
+.product-text2 button {
   margin-top: 0.2rem;
   width: 104px;
   height: 22px;
@@ -110,14 +109,14 @@
 }
 
 @media screen and (max-width: 900px) {
-  .Total-div-container {
+  .Total-divs-container {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(2, 2fr);
   }
 }
 @media screen and (max-width: 600px) {
-  .Total-div-container {
+  .Total-divs-container {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(1, 1fr);

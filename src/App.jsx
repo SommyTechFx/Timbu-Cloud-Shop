@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Navbar from "./components/Homepage/Navbar.jsx";
 import Landingpage from "./components/Homepage/Landingpage.jsx";
+import Footter from "./components/Homepage/Footter.jsx";
 function App() {
   return (
     <div>
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route index element={<Landingpage />}></Route>
         </Routes>
+        <Footter />
       </BrowserRouter>
     </div>
   );

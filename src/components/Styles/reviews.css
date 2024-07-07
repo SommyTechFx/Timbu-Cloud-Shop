@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.review-section {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* width: 100%; */
+  margin-top: 5rem;
+  /* margin-bottom: 5rem; */
+}
+
+.review-section span {
+  font-family: " PT Serif";
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.6rem;
+  letter-spacing: 0.02em;
+  color: rgba(209, 154, 100, 1);
+}
+.review-section::before,
+.review-section::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid rgba(209, 154, 100, 0.65);
+  margin: 0 10px;
+}
+
+.review-img-text {
+  position: relative;
+  padding: 1rem;
+}
+.review-img-text img {
+  position: absolute;
+  top: -30px;
+}
+
+.review-img-text p {
+  align-items: center;
+  text-align: center;
+  font-family: " PT Serif";
+  font-size: 3.2rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 44.8px;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.Total-review-container {
+  margin-top: 2rem;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 3fr);
+}
+.review-container {
+  box-shadow: 0 2px 5px rgba(209, 154, 100, 0.65);
+  /* display: inline-block;
+  text-align: left; */
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.review-container h3 {
+  font-family: " PT Serif";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 44.8px;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.review-container span {
+  font-family: "PT Serif";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 25.6px;
+  color: rgba(0, 0, 0, 0.8);
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.review-stars img {
+  width: 2rem;
+}
+.star-last {
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 900px) {
+  .Total-review-container {
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .review-img-text p {
+    padding-top: 1rem;
+    font-size: 2.5rem;
+  }
+  .review-img-text img {
+    width: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .review-pic img {
+    width: 25rem;
+  }
+
+  .review-container {
+    width: 80%;
+    text-align: center;
+  }
+  .review-container span {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+}
