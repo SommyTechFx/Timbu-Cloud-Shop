@@ -12,7 +12,7 @@
   box-shadow: 0 2px 5px rgba(209, 154, 100, 0.65);
 }
 
-ul {
+.total-footer ul {
   display: inline-block;
 }
 .App-description h3 {
