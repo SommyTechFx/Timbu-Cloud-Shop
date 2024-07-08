@@ -27,6 +27,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import "./../Styles/navbar.css";
 import { IoIosMenu } from "react-icons/io";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,7 +42,10 @@ function Navbar() {
       </div>
       <div className={`navbar-search ${isMenuOpen ? "open" : ""}`}>
         <ul className="navbar-list">
-          <li>Home</li>
+          <Link className="links" to="/">
+            <li>Home</li>
+          </Link>
+
           <li>Category</li>
           <li>Trending now</li>
           <li>About Us</li>

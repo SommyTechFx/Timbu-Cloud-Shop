@@ -6,6 +6,9 @@ body {
   --text: #130b1d;
   --background: rgba(255, 255, 255, 1);
 }
+.links {
+  text-decoration: none;
+}
 .navbar {
   display: flex;
   align-items: center;

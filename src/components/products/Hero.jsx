@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import "./../Styles/hero.css";
+// import Productdetails from "../../pages/Productdetails";
 
 function Hero() {
   return (
@@ -9,7 +11,9 @@ function Hero() {
           Elevate Your Beauty with our Timeless ,<br></br>Jewelry Collections
         </h3>
         <p>You are never fully dressed without a jewelry</p>
-        <button>Shop Now</button>
+        <Link to="/product-checkout">
+          <button>Shop Now</button>
+        </Link>
       </section>
     </section>
   );

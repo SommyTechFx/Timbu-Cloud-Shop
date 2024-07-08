@@ -1,8 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Navbar from "./components/Homepage/Navbar.jsx";
-import Landingpage from "./components/Homepage/Landingpage.jsx";
+import Landingpage from "./pages/Landingpage.jsx";
 import Footter from "./components/Homepage/Footter.jsx";
+import Productdetails from "./pages/Productdetails.jsx";
+import Shoppincart from "./pages/Shoppincart.jsx";
 function App() {
   return (
     <div>
@@ -10,6 +12,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route index element={<Landingpage />}></Route>
+          <Route path="/product-checkout" element={<Productdetails />}></Route>
+          <Route path="/shopping-cart" element={<Shoppincart />}></Route>
         </Routes>
         <Footter />
       </BrowserRouter>

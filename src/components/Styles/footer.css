@@ -53,15 +53,34 @@
   color: rgba(255, 255, 255, 1);
 }
 hr {
-  border-bottom: 1px solid white;
-  width: 100%;
-  flex: 1;
+  color: rgba(255, 255, 255, 1);
+}
+footer {
+  background-color: rgba(209, 154, 100, 1);
+  text-align: center;
+  padding: 2rem;
+}
+footer p {
+  font-family: "PT Serif";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 33.6px;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.8);
+}
+.social-icons {
+  display: flex;
+
+  gap: 5px;
 }
 @media screen and (max-width: 900px) {
   .total-footer {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(2, 2fr);
+  }
+  footer p {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 600px) {

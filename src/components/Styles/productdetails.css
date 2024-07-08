@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.product-direction {
+  background-color: rgba(245, 245, 245, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+.pd1 {
+  display: flex;
+  font-family: "PT Serif";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 31.8px;
+}
+
+.pd1 p {
+  color: rgba(0, 0, 0, 0.37);
+}
+
+.pd2 {
+  display: flex;
+  font-family: "PT Serif";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 31.8px;
+  color: rgba(209, 154, 100, 1);
+}
+
+.pd2 .icon {
+  color: rgba(209, 154, 100, 1);
+  margin-left: 1rem;
+}
+.checkout-div-layout {
+  display: flex;
+  padding: 5rem;
+
+  align-items: center;
+}
+.grid-pics {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid-pics img {
+  width: 14rem;
+  height: 14rem;
+}
+.main-product {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  align-items: center;
+}
+.main-product img {
+  gap: 1rem;
+  width: 400px;
+  height: 450px;
+  border-radius: 10px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.product-price-details {
+  padding: 1rem;
+
+  align-items: flex-start;
+
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+.product-price-details p {
+  font-family: "PT Serif";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-top: 1rem;
+}
+.rounded-btn {
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  background-color: rgba(209, 154, 100, 1);
+}
+.rounded-btn2 {
+  margin: 5px;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border: none;
+  color: black;
+  border-radius: 50%;
+}
+.Add-icon {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.Add-icon button {
+  font-family: "PT Serif";
+  font-weight: 400;
+  border-radius: 5px;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  letter-spacing: 0.02em;
+  border: none;
+  color: white;
+  background-color: rgba(209, 154, 100, 1);
+}
+.heart-icon {
+  font-size: 3rem;
+}
+.pd4 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "PT Serif";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 31.8px;
+  margin-top: 1rem;
+}
+.pd4 h6 {
+  color: rgba(209, 154, 100, 1);
+  font-family: "PT Serif";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 33.6px;
+  letter-spacing: 0.02em;
+}
+.pd5 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.pd5 h6 {
+  border: 1px solid rgba(209, 154, 100, 1);
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.pd5 div span {
+  border-radius: 8px;
+  padding: 2px;
+  background-color: rgba(209, 154, 100, 1);
+  color: white;
+}
+.decription-review-warranty {
+  padding-left: 1rem;
+  display: flex;
+  gap: 3rem;
+}
+.decription-review-warranty button {
+  border: none;
+  background-color: white;
+  font-family: "PT Serif";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+}
+.decription-review-warranty button:hover {
+  color: rgba(209, 154, 100, 1);
+}
+@media screen and (max-width: 900px) {
+  .grid-pics img {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .checkout-div-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .main-product img {
+    width: 35rem;
+    height: 450px;
+    border-radius: 10px 0px 0px 0px;
+    opacity: 0px;
+  }
+  .pd2 p {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .grid-pics img {
+    margin: 0.2rem;
+    width: 8rem;
+    height: 10rem;
+  }
+  .checkout-div-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .main-product img {
+    width: 32rem;
+    height: 32rem;
+    border-radius: 10px 0px 0px 0px;
+  }
+  .grid-pics {
+    margin: 1rem;
+
+    display: block;
+  }
+  .checkout-div-layout {
+    display: block;
+  }
+  .pd2 p {
+    display: none;
+  }
+  .decription-review-warranty button {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .grid-pics img {
+    margin: 0.8rem;
+    width: 6rem;
+    height: 8rem;
+  }
+}
