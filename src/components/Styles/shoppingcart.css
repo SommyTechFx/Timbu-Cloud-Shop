@@ -1,11 +1,7 @@
 #checking-out {
   padding-left: 2rem;
-  margin-top: 3rem;
   display: flex;
-  gap: 20rem;
-}
-hr {
-  width: 55%;
+  gap: 25rem;
 }
 
 #checking-out h3 {
@@ -22,6 +18,8 @@ hr {
 }
 #product-price-quantity {
   display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
 }
 #add-to-cart-img {
   display: flex;
@@ -41,7 +39,6 @@ hr {
   color: rgba(0, 0, 0, 0.8);
 }
 #add-cart-calculations {
-  padding: 1rem;
   align-items: center;
 }
 
@@ -64,15 +61,59 @@ hr {
 }
 #each-price {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10rem;
+  margin: 1rem;
+}
+#each-price P {
+  font-family: "PT Serif";
+  font-size: 1remx;
+  font-weight: 700;
+  line-height: 21.2px;
+  text-align: right;
 }
 #price-list {
-  width: 40rem;
+  padding: 2rem;
+  width: 30rem;
+  border-radius: 1rem;
   border: 0.5px solid rgba(209, 154, 100, 0.65);
 }
+#price-list button {
+  border: none;
+  margin-left: 4rem;
+  border-radius: 8px;
+  /* padding-left: 3rem;
+  padding-right: 3rem; */
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  background-color: rgba(209, 154, 100, 1);
+  color: rgba(255, 255, 255, 1);
+}
+#underline2 {
+  width: 100%;
+}
+#underline1 {
+  width: 100%;
+}
 @media screen and (max-width: 900px) {
-  hr {
-    width: 85%;
+  /* #add-to-cart {
+    border: 1px solid red;
+  } */
+
+  #add-to-cart p {
+    font-size: 15px;
+  }
+  #underline2 {
+    width: 100%;
+  }
+  #price-list button {
+    border-radius: 1rem;
+    margin-left: 5rem;
+    border: none;
+    padding: 1.5rem;
+    background-color: rgba(209, 154, 100, 1);
+    color: rgba(255, 255, 255, 1);
   }
   #checking-out {
     gap: 15rem;
@@ -86,6 +127,32 @@ hr {
   }
   #product-price-quantity {
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(1, 1fr);
+  }
+  #price-list {
+    padding: 2rem;
+    width: 30rem;
+    border-radius: 1rem;
+    border: 0.5px solid rgba(209, 154, 100, 0.65);
+  }
+}
+@media screen and (max-width: 650px) {
+  #add-to-cart-img img {
+    width: 8rem;
+    height: 8rem;
+  }
+  #add-to-cart {
+    display: flex;
+    gap: 4rem;
+  }
+  #add-to-cart-img p {
+    font-size: 1rem;
+  }
+  #add-to-cart p {
+    font-size: 1rem;
+  }
+  #checking-out h3 {
+    font-size: 1.2rem;
   }
 }

@@ -36,7 +36,9 @@ function Productdetails() {
         </div>
         <div className="pd2">
           <p>Continue shopping</p>
-          <IoIosArrowRoundBack className="icon" />
+          <Link to="/">
+            <IoIosArrowRoundBack className="icon" />
+          </Link>
         </div>
       </section>
       <section className="checkout-div-layout">

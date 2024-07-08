@@ -30,7 +30,7 @@ function Shoppincart() {
 
             <h3>Quantity</h3>
           </div>
-
+          <hr id="underline1" />
           <section id="add-to-cart">
             <div id="add-to-cart-img">
               <img src={pic6} alt="" />
@@ -55,6 +55,37 @@ function Shoppincart() {
             <h3>Subtotal</h3>
             <p>$2,500.00</p>
           </div>
+          <div id="each-price">
+            <h3>Delivery Fee</h3>
+            <p>$10.00</p>
+          </div>
+          <div id="each-price">
+            <h3>Promo Offer</h3>
+            <p>$0.00</p>
+          </div>
+          <div id="each-price">
+            <h3>Grand Total</h3>
+            <p>$2,505.00</p>
+          </div>
+          <hr id="underline2" />
+          <div id="each-price">
+            <h3>Subtotal</h3>
+            <p>$2,500.00</p>
+          </div>
+          <Link to="/form-details">
+            <button
+              style={{
+                paddingTop: "2rem",
+                paddingBottom: "2rem",
+                backgroundColor: "#007bff",
+                color: "white",
+                fontSize: "1.5rem",
+                fontWeight: "bold",
+              }}
+            >
+              Proceed
+            </button>
+          </Link>
         </section>
       </section>
     </section>
