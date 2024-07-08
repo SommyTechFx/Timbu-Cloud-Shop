@@ -1,4 +1,91 @@
 #checking-out {
+  padding-left: 2rem;
+  margin-top: 3rem;
+  display: flex;
+  gap: 20rem;
+}
+hr {
+  width: 55%;
+}
+
+#checking-out h3 {
+  font-family: "PT Serif";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 31.8px;
+  text-align: left;
+}
+#add-to-cart {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+#product-price-quantity {
+  display: flex;
+}
+#add-to-cart-img {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+}
+#add-to-cart-img img {
+  width: 12rem;
+  height: 12rem;
+}
+#add-to-cart-img p {
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26.5px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+}
+#add-cart-calculations {
+  padding: 1rem;
+  align-items: center;
+}
+
+#add-cart-calculations button {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(209, 154, 100, 0.65);
+}
+
+#add-to-cart p {
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26.5px;
+
+  color: rgba(0, 0, 0, 0.6);
+}
+#each-price {
   display: flex;
   justify-content: space-evenly;
+}
+#price-list {
+  width: 40rem;
+  border: 0.5px solid rgba(209, 154, 100, 0.65);
+}
+@media screen and (max-width: 900px) {
+  hr {
+    width: 85%;
+  }
+  #checking-out {
+    gap: 15rem;
+  }
+  #add-to-cart-img p {
+    font-size: 1.5rem;
+  }
+  #add-to-cart-img img {
+    width: 10rem;
+    height: 10rem;
+  }
+  #product-price-quantity {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
