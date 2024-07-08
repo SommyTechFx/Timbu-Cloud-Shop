@@ -73,18 +73,7 @@ function Shoppincart() {
             <p>$2,500.00</p>
           </div>
           <Link to="/form-details">
-            <button
-              style={{
-                paddingTop: "2rem",
-                paddingBottom: "2rem",
-                backgroundColor: "#007bff",
-                color: "white",
-                fontSize: "1.5rem",
-                fontWeight: "bold",
-              }}
-            >
-              Proceed
-            </button>
+            <button>Proceed to Checkout</button>
           </Link>
         </section>
       </section>
