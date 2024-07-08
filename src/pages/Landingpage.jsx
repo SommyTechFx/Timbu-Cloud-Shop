@@ -7,10 +7,19 @@ function Landingpage() {
   return (
     <div>
       <Hero />
-      <Category />
-      <Trending />
-      <Products />
-      <Reviews />
+      <div id="category">
+        <Category />
+      </div>
+
+      <div id="trending">
+        <Trending />
+      </div>
+      <div id="products">
+        <Products />
+      </div>
+      <div id="review">
+        <Reviews />
+      </div>
     </div>
   );
 }

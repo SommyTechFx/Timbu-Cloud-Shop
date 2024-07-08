@@ -92,7 +92,17 @@ function checkout() {
               </label>
             </div>
           </div>
-          <button>Proceed</button>
+          <Link>
+            <button
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              Proceed
+            </button>
+          </Link>
         </section>
         <section></section>
       </section>

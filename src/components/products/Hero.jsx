@@ -11,7 +11,7 @@ function Hero() {
           Elevate Your Beauty with our Timeless ,<br></br>Jewelry Collections
         </h3>
         <p>You are never fully dressed without a jewelry</p>
-        <Link to="/product-checkout">
+        <Link to="/products">
           <button>Shop Now</button>
         </Link>
       </section>

@@ -1,26 +1,3 @@
-// function Navbar() {
-//   return (
-//     <nav>
-//       <h3>Lasom</h3>
-//       <ul>
-//         <li>Home</li>
-//         <li>Category</li>
-//         <li>Trending now</li>
-//         <li>About Us</li>
-//       </ul>
-//       <div></div>
-//     </nav>
-//   );
-// }
-
-// export default Navbar;
-
-// import {
-//   FaSearch,
-//   FaUserAlt,
-//   FaShoppingCart,
-//   FaUserCircle,
-// } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { CiSearch } from "react-icons/ci";
 import { MdOutlineShoppingCart } from "react-icons/md";
@@ -31,7 +8,9 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -46,9 +25,9 @@ function Navbar() {
             <li>Home</li>
           </Link>
 
-          <li>Category</li>
-          <li>Trending now</li>
-          <li>About Us</li>
+          <li onClick={() => scrollToSection("category")}>Category</li>
+          <li onClick={() => scrollToSection("trending")}>Trending now</li>
+          <li onClick={() => scrollToSection("About")}>About Us</li>
         </ul>
       </div>
       <div className="navbar-icons">

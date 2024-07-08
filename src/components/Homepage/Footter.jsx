@@ -8,7 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 function Footter() {
   return (
     <>
-      <article className="total-footer">
+      <article className="total-footer" id="About">
         <div className="App-description">
           <h3>Lasom</h3>
           <p>
